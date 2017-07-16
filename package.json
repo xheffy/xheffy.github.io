@@ -4,7 +4,14 @@
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
+    "react-audioplayer": "^0.3.0",
     "react-dom": "^15.6.1",
+    "react-jinke-music-player": "^0.1.2",
+    "react-playemjs": "^0.0.1",
+    "react-player": "^0.19.0",
+    "react-player-controls": "^0.5.14",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10"
   },
   "scripts": {
