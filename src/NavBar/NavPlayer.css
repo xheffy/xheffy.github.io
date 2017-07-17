@@ -1,7 +1,3 @@
-svg > g path {
-	fill: purple;
-}
-
-svg > g rect {
-	fill: purple;
+.audio-player > div > div > div button {
+  background: transparent;
 }

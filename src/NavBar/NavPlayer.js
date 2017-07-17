@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import ReactAudio from 'react-audioplayer';
 
+import './NavPlayer.css';
+
 class NavPlayer extends Component {
 	constructor(props) {
 		super(props);
 		this.songs = [
 			{
-				name: 'tete',
+				name: 'ttetteterete',
 				src: './ttetteterete.mp3'
 			}
 		];
@@ -14,29 +16,25 @@ class NavPlayer extends Component {
 
 	render() {
 		return (
-			<div style={{width: '50%', margin: '0 auto'}}>
+			<div className='audio-player'
+				style={{width: '70%', margin: '0 auto', display: 'flex', justifyContent: 'center'}}>
 				<ReactAudio
 					playlist={this.songs}
-					autoPlay
-					color={'purple'}
+					/*autoPlay*/
+					color={this.props.color}
 					style={{
 						display: 'inline-block',
 						margin: '10px',
-						boxShadow: '0 5px 5px gray, 0 7px 7px orange',
+						boxShadow: '0 3px 3px' + this.props.color,
 						verticalAlign: 'middle'}}
 					volumeOrientationDown/>
-				{/* <audio controls autoPlay loop alt='background music' style={{margin: '0 auto', width: '75%'}}>
-	  			<source src="./ttetteterete.mp3" type="audio/mpeg" />
-	  			<source src="./ttetteterete.ogg" type="audio/ogg" />
-	  			Your browser does not support the HTML audio tag.
-				</audio> 
-				*/}
-				<span style={{margin: '0 10px'}} >from <a href='https://youtu.be/UDK5Lu4QfwE'> this video </a></span>
+				<span style={{margin: '0 10px', alignSelf: 'center'}}>from 
+					<a style={{color: '#283593'}} href='https://youtu.be/UDK5Lu4QfwE'> this video 
+					</a>
+				</span>
 			</div>
 		);
 	}
-
-
 }
 
 export default NavPlayer;
