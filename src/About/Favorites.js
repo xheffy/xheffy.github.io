@@ -1,26 +1,17 @@
 import React, { Component } from 'react';
+import './Favorites.css';
 
 class Favorites extends Component {
 	
 	render() {
 		return (
-			<article style={{fontFamily: '\'Handlee\', cursive', width: 'inherit'}}>
-				<h3 style={{
-					fontSize: '25px',
-					width: '100px',
-					margin: '0 12%',
-					color: 'rgba(0,0,0,0.8)'
-				}}>
-					Favorites
-				</h3>
-				<p style={{fontSize: '20px', width: 'inherit', margin: '5px 15%'}}>
-					Hobby: Playing with my husband <br />
-					Movie: Harry Potter <br />
-					Food: Pyeong-Yang Naeng Myun (North Korean style cold noodles) <br />
-					Whisky: Balvenie Triple Cask 16 years <br />
-					K-Pop Group: TWICE <br />
-				</p>
-			</article>
+			<dl className='favorites' style={{fontSize: '20px', width: 'inherit'}}>
+				<dt>Hobby:</dt> <dd>Playing with my husband </dd> <br />
+				<dt>Movie:</dt> <dd>Harry Potter</dd><br />
+				<dt>Food:</dt> <dd>Pyeong-Yang Naeng Myun (North Korean style cold noodles) </dd><br />
+				<dt>Whisky:</dt> <dd>Balvenie Triple Cask 16 years</dd><br />
+				<dt>K-Pop Group:</dt> <dd>TWICE</dd><br />
+			</dl>
 		);
 	}
 }

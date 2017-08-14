@@ -9,7 +9,14 @@ class Homepage extends Component {
 	render() {
 		return (
 			<div style={{
-				height: '100vh',
+				position: 'absolute',
+				top: '0',
+				bottom: '0',
+				left: '0',
+				right: '0',
+				height: 'inherit',
+				width: 'inherit',
+				zIndex: '-1',
 				padding: '50px 50px 180px',
 				backgroundColor: '#E1BEE7'
 			}}>
