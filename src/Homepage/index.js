@@ -16,7 +16,6 @@ class Homepage extends Component {
 				right: '0',
 				height: 'inherit',
 				width: 'inherit',
-				zIndex: '-1',
 				padding: '50px 50px 180px',
 				backgroundColor: '#E1BEE7'
 			}}>

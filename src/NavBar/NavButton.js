@@ -7,23 +7,22 @@ import {
 } from 'react-router-dom'
 
 class NavButton extends Component {
-
-
 	render() {
 		return (
-					<button style={{
-						backgroundColor: this.props.color,
+				<div style={{
+					backgroundColor: this.props.color,
 		   			height: '50px',
 		    		color: 'rgba(0, 0, 0, 0.8)',
 		    		fontFamily: '\'Quicksand\', sans-serif',
 		    		fontSize: 'large',
 		    		flex: '0 0 150px',
-		    		borderRadius: '15px'
+	                borderRadius: '15px',
+	                textAlign: 'center'
 		    	}}>
-		    		<Link to={this.props.subdir} style={{color: 'rgba(0, 0, 0, 0.7)', fontWeight: 'bold'}}>
+		    		<Link to={this.props.subdir} style={{color: 'rgba(0, 0, 0, 0.7)', fontWeight: 'bold', lineHeight: '50px'}}>
 							{this.props.menuItem}
-						</Link>
-					</button>
+					</Link>
+			    </div>
 		);
 	}
 }

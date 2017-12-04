@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import Socialicon from './Socialicons';
 
-const social_infos = [['fa-linkedin-square', 'https://www.linkedin.com/in/nayeonpark/'],
-										  ['fa-github-square', 'https://github.com/xheffy']];
+const social_infos = [['fa-linkedin-square', 'https://www.linkedin.com/in/nayeonpark/'], ['fa-github-square', 'https://github.com/xheffy']];
 
 class Socials extends Component {
 	render() {
